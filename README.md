@@ -6,7 +6,9 @@ Understand and simulate real-world network attacks
 Perform scanning, enumeration, and exploitation using tools like Nmap and Metasploit
 Crack Linux password hashes using John the Ripper
 Identify outdated services and recommend security remediations
+
 💻 Lab Setup
+
 🖥️ Operating Systems
 Kali Linux – Attacker Machine
 Metasploitable 2 – Target Machine
@@ -15,12 +17,15 @@ nmap – Port, OS, and service version scanning
 Metasploit – Exploitation
 John the Ripper – Password hash cracking
 Linux built-in commands – user management and enumeration
+
 🚀 Tasks Performed
+
 🔍 Network Scanning
 nmap -v IP – Basic scan
 nmap -v -p- IP – Full port scan
 nmap -sV IP – Service version detection
 nmap -O IP – OS detection
+
 🔐 Hidden Ports Discovered
 21/tcp   open  ftp
 22/tcp   open  ssh
@@ -46,10 +51,12 @@ nmap -O IP – OS detection
 OS: Linux 2.6.x (Metasploitable)
 Open services: vsftpd, OpenSSH, Apache, MySQL, Samba, etc.
 Vulnerable ports: 21 (FTP), 22 (ssh), 5900 (VNC Server)
+
 💥 Exploitation
 vsftpd 2.3.4 backdoor
 ssh root login through brute force 
 vnc window based root access
+
 👤 Privilege Escalation
 Created user aryan and kali with root permissions
 Extracted and cracked password hash using John the Ripper
